@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color:#2A5161;
+  
+}
+
+
+
+header {
+  color: whitesmoke;
+  padding-bottom: 30px;
+  letter-spacing: 5px;
+}
+
+button {
+  background-color: rgb(199, 202, 23);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  display: 'block';
+    width: 70%;
+    font-size: 1em;
+    margin: 0.5em;
+}
+input {
+  background-color:ghostwhite;
+  border: none;
+  border-radius: 5px;
+}
+.list {
+  color: white;
+  
+  
+}
+/* .listBackground {
+  ;
+  position: relative;
+  top:70px;
+  
+  border-radius: 5px;
+} */
+
+.back {
+  background-color: rgb(101, 172, 201);
+  margin-left: 1em;
+  text-align: center;
+
+}
