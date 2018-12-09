@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
-import './App.css';
+import './Todo.css';
+import Button from '@material-ui/core/Button';
+import Input from '@material-ui/core/Input';
+
+
+
 
 class App extends Component {
   constructor(props){
@@ -24,19 +29,25 @@ handleSubmit=()=> {
 }
   
   render() {
+    // hello
     return (
-      <div className="App">
+      <div className="List">
       <header>
-        <h2>{this.state.message}</h2>
+        <p className="heading">{this.state.message}</p>
       </header> 
       <p>
-          <input value ={this.state.inputValue}onChange = {this.handleInputChange} type ='text'/>
-          <button onClick={this.handleSubmit}> Add Todo </button>
+          <Input placeholder='Add List Item' value ={this.state.inputValue}onChange = {this.handleInputChange} type ='text'/>
+          
       </p>
+      <Button variant="contained" color = "secondary"
+          
+           onClick={this.handleSubmit}> Add Todo </Button>
+           <hr />
+
            <p className = 'back'>
           {this.state.list.map((item)=>{
             return <div>
-             <p className ="list">{item}</p>
+             <p className ="theList">{item}</p>
              </div>
              
           }
