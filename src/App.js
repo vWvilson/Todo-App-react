@@ -10,7 +10,7 @@ class App extends Component {
   constructor(props){
     super(props);
     this.state = {
-      message: "TODO LIST",
+      message: "TO-DO LIST",
       list: [],
       inputValue: ''
       
@@ -41,7 +41,7 @@ handleSubmit=()=> {
       </p>
       <Button variant="contained" color = "secondary"
           
-           onClick={this.handleSubmit}> Add Todo </Button>
+           onClick={this.handleSubmit}> Add To-Do </Button>
            <hr />
 
            <p className = 'back'>
