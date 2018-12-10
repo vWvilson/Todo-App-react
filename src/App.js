@@ -46,9 +46,9 @@ handleSubmit=()=> {
 
            <p className = 'back'>
           {this.state.list.map((item)=>{
-            return <div>
+            return <span key = {item}>
              <p className ="theList">{item}</p>
-             </div>
+             </span>
              
           }
       
